@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* System font stacks — no external fonts needed */
+  --font-geist: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-dm-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Hintergründe */
+  --bg-canvas: #0A0A0F;
+  --bg-surface: #12121A;
+  --bg-elevated: #1C1C2E;
+
+  /* Etappen-Farben */
+  --color-scan: #3B82F6;
+  --color-target: #10B981;
+  --color-engine: #F59E0B;
+  --color-takeoff: #8B5CF6;
+
+  /* Text */
+  --text-primary: #F4F4F5;
+  --text-secondary: #A1A1AA;
+  --text-muted: #52525B;
+
+  /* Akzente */
+  --accent-glow: rgba(59, 130, 246, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+}
+
+/* Textarea auto-resize helper */
+textarea {
+  field-sizing: content;
+  min-height: 80px;
+}
